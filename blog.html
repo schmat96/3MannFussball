@@ -1,0 +1,2356 @@
+
+<!DOCTYPE html>
+<html class='v2' dir='ltr'>
+<head>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { (function(){function c(a){this.t={};this.tick=function(a,c,b){var d=void 0!=b?b:(new Date).getTime();this.t[a]=[d,c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(e){}};this.tick("start",null,a)}var a;window.performance&&(a=window.performance.timing);var h=a?new c(a.responseStart):new c;window.jstiming={Timer:c,load:h};if(a){var b=a.navigationStart,e=a.responseStart;0<b&&e>=b&&(window.jstiming.srt=e-b)}if(a){var d=window.jstiming.load;0<b&&e>=b&&(d.tick("_wtsrt",void 0,b),d.tick("wtsrt_",
+"_wtsrt",e),d.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),d&&0<b&&(d.tick("_tbnd",void 0,window.chrome.csi().startE),d.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,d&&0<b&&(d.tick("_tbnd",void 0,window.external.startE),d.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(k){}})();window.tickAboveFold=function(c){var a=0;if(c.offsetParent){do a+=c.offsetTop;while(c=c.offsetParent)}c=a;750>=c&&window.jstiming.load.tick("aft")};var f=!1;function g(){f||(f=!0,window.jstiming.load.tick("firstScrollTime"))}window.addEventListener?window.addEventListener("scroll",g,!1):window.attachEvent("onscroll",g);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='http://dreimannfussball.blogspot.ch/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://dreimannfussball.blogspot.com/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Programmier-Projekt - Hexagon - Atom" href="http://dreimannfussball.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Programmier-Projekt - Hexagon - RSS" href="http://dreimannfussball.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Programmier-Projekt - Hexagon - Atom" href="https://www.blogger.com/feeds/2832294983171429389/posts/default" />
+<link rel="openid.server" href="https://www.blogger.com/openid-server.g" />
+<link rel="openid.delegate" href="http://dreimannfussball.blogspot.com/" />
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/1491713228-ieretrofit.js"></script>
+<![endif]-->
+<meta content='http://dreimannfussball.blogspot.com/' property='og:url'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Programmier-Projekt - Hexagon</title>
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/static/v1/widgets/3753488570-css_bundle_v2.css' />
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=2832294983171429389&zx=8cc28f5e-0056-496b-a033-db4114670f95' />
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Josh Peterson
+URL:      www.noaesthetic.com
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#66bbdd"/>
+<Group description="Page Text" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd"/>
+<Variable name="content.background.color" description="Main Background" type="color" default="#ffffff"/>
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent"/>
+</Group>
+<Group description="Links" selector=".main-outer">
+<Variable name="link.color" description="Link Color" type="color" default="#2288bb"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#888888"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Font" type="font"
+default="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#3399bb" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.text.color" description="Description Color" type="color"
+default="#777777" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#999999"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#f5f5f5"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, .comments h4">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+</Group>
+<Group description="Date Header" selector=".date-header">
+<Variable name="date.header.color" description="Text Color" type="color"
+default="#222222"/>
+<Variable name="date.header.background.color" description="Background Color" type="color"
+default="transparent"/>
+<Variable name="date.header.font" description="Text Font" type="font"
+default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="date.header.padding" description="Date Header Padding" type="string" default="inherit"/>
+<Variable name="date.header.letterspacing" description="Date Header Letter Spacing" type="string" default="inherit"/>
+<Variable name="date.header.margin" description="Date Header Margin" type="string" default="inherit"/>
+</Group>
+<Group description="Post Footer" selector=".post-footer">
+<Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="post.footer.background.color" description="Background Color" type="color"
+default="#f9f9f9"/>
+<Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Gadgets" selector="h2">
+<Variable name="widget.title.font" description="Title Font" type="font"
+default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#999999"/>
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="#ffffff"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="#eeeeee"/>
+<Variable name="image.text.color" description="Caption Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Accents" selector=".content-inner">
+<Variable name="body.rule.color" description="Separator Line Color" type="color" default="#eeeeee"/>
+<Variable name="tabs.border.color" description="Tabs Border Color" type="color" default="#eeeeee"/>
+</Group>
+<Variable name="body.background" description="Body Background" type="background"
+color="#44ee00" default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.override" description="Body Background Override" type="string" default=""/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="url(https://www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="body.background.gradient.tile" description="Body Gradient Tile" type="url"
+default="url(https://www.blogblog.com/1kt/simple/body_gradient_tile_light.png)"/>
+<Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-inner"/>
+<Variable name="content.padding" description="Content Padding" type="length" default="10px" min="0" max="100px"/>
+<Variable name="content.padding.horizontal" description="Content Horizontal Padding" type="length" default="10px" min="0" max="100px"/>
+<Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="40px" min="0" max="100px"/>
+<Variable name="content.shadow.spread.webkit" description="Content Shadow Spread (WebKit)" type="length" default="5px" min="0" max="100px"/>
+<Variable name="content.shadow.spread.ie" description="Content Shadow Spread (IE)" type="length" default="10px" min="0" max="100px"/>
+<Variable name="main.border.width" description="Main Border Width" type="length" default="0" min="0" max="10px"/>
+<Variable name="header.background.gradient" description="Header Gradient" type="url" default="none"/>
+<Variable name="header.shadow.offset.left" description="Header Shadow Offset Left" type="length" default="-1px" min="-50px" max="50px"/>
+<Variable name="header.shadow.offset.top" description="Header Shadow Offset Top" type="length" default="-1px" min="-50px" max="50px"/>
+<Variable name="header.shadow.spread" description="Header Shadow Spread" type="length" default="1px" min="0" max="100px"/>
+<Variable name="header.padding" description="Header Padding" type="length" default="30px" min="0" max="100px"/>
+<Variable name="header.border.size" description="Header Border Size" type="length" default="1px" min="0" max="10px"/>
+<Variable name="header.bottom.border.size" description="Header Bottom Border Size" type="length" default="0" min="0" max="10px"/>
+<Variable name="header.border.horizontalsize" description="Header Horizontal Border Size" type="length" default="0" min="0" max="10px"/>
+<Variable name="description.text.size" description="Description Text Size" type="string" default="140%"/>
+<Variable name="tabs.margin.top" description="Tabs Margin Top" type="length" default="0" min="0" max="100px"/>
+<Variable name="tabs.margin.side" description="Tabs Side Margin" type="length" default="30px" min="0" max="100px"/>
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="url(https://www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="tabs.border.width" description="Tabs Border Width" type="length" default="1px" min="0" max="10px"/>
+<Variable name="tabs.bevel.border.width" description="Tabs Bevel Border Width" type="length" default="1px" min="0" max="10px"/>
+<Variable name="post.margin.bottom" description="Post Bottom Margin" type="length" default="25px" min="0" max="100px"/>
+<Variable name="image.border.small.size" description="Image Border Small Size" type="length" default="2px" min="0" max="10px"/>
+<Variable name="image.border.large.size" description="Image Border Large Size" type="length" default="5px" min="0" max="10px"/>
+<Variable name="page.width.selector" description="Page Width Selector" type="string" default=".region-inner"/>
+<Variable name="page.width" description="Page Width" type="string" default="auto"/>
+<Variable name="main.section.margin" description="Main Section Margin" type="length" default="15px" min="0" max="100px"/>
+<Variable name="main.padding" description="Main Padding" type="length" default="15px" min="0" max="100px"/>
+<Variable name="main.padding.top" description="Main Padding Top" type="length" default="30px" min="0" max="100px"/>
+<Variable name="main.padding.bottom" description="Main Padding Bottom" type="length" default="30px" min="0" max="100px"/>
+<Variable name="paging.background"
+color="#ffffff"
+description="Background of blog paging area" type="background"
+default="transparent none no-repeat scroll top center"/>
+<Variable name="footer.bevel" description="Bevel border length of footer" type="length" default="0" min="0" max="10px"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="mobile.background.size" description="Mobile Background Size" type="string" default="auto"/>
+<Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff" />
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #222222;
+background: #44ee00 none repeat scroll top left;
+padding: 0 40px 40px 40px;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+h2 {
+font-size: 22px;
+}
+a:link {
+text-decoration:none;
+color: #77cc11;
+}
+a:visited {
+text-decoration:none;
+color: #888888;
+}
+a:hover {
+text-decoration:underline;
+color: #65ff00;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent none repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 10px #333333;
+box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px 10px;
+}
+.content-inner {
+background-color: #ffffff;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: #77cc11 url(//www.blogblog.com/1kt/simple/gradients_light.png) repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
+text-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
+}
+.Header h1 a {
+color: #ffffff;
+}
+.Header .description {
+font-size: 140%;
+color: #ffffff;
+}
+.header-inner .Header .titlewrapper {
+padding: 22px 30px;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 30px;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 0 solid #eeeeee;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -0;
+border-top: 0 solid #eeeeee;
+border-left: 0 solid #eeeeee;
+border-right: 0 solid #eeeeee;
+}
+.tabs-inner .widget ul {
+background: #f5f5f5 url(https://www.blogblog.com/1kt/simple/gradients_light.png) repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #eeeeee;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #999999;
+border-left: 1px solid #ffffff;
+border-right: 1px solid #eeeeee;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #000000;
+background-color: #eeeeee;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid #eeeeee;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid #eeeeee;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid #eeeeee;
+}
+/* Headings
+----------------------------------------------- */
+div.widget > h2,
+div.widget h2.title {
+margin: 0 0 1em 0;
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #000000;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.widget .popular-posts ul {
+list-style: none;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.date-header span {
+background-color: rgba(0, 0, 0, 0);
+color: #222222;
+padding: inherit;
+letter-spacing: inherit;
+margin: inherit;
+}
+.main-inner {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.main-inner .column-center-inner {
+padding: 0 15px;
+}
+.main-inner .column-center-inner .section {
+margin: 0 15px;
+}
+.post {
+margin: 0 0 25px 0;
+}
+h3.post-title, .comments h4 {
+font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 2px;
+background: #ffffff;
+border: 1px solid #eeeeee;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 5px;
+}
+.post-body .tr-caption-container {
+color: #222222;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #666666;
+background-color: #f9f9f9;
+border-bottom: 1px solid #eeeeee;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid #eeeeee;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #eeeeee;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
+}
+.comments .comment-thread.inline-thread {
+background-color: #f9f9f9;
+}
+.comments .continue {
+border-top: 2px solid #999999;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid #eeeeee;
+}
+.blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #ffffff;
+padding: 5px;
+}
+.footer-outer {
+border-top: 0 dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #ffffff;
+}
+.mobile-index-contents {
+color: #222222;
+}
+.mobile-link-button {
+background-color: #77cc11;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: #eeeeee;
+color: #000000;
+border-top: 1px solid #eeeeee;
+border-bottom: 1px solid #eeeeee;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #eeeeee;
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 1140px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 1140px;
+max-width: 1140px;
+_width: 1140px;
+}
+.main-inner .columns {
+padding-left: 0px;
+padding-right: 360px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0px;
+right: 360px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0px") -
+parseInt("360px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0px;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 360px;
+}
+.main-inner .column-left-outer {
+width: 0px;
+right: 100%;
+margin-left: -0px;
+}
+.main-inner .column-right-outer {
+width: 360px;
+margin-right: -360px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+<script type="text/javascript">var a="&m=1",d="(^|&)m=",e="?",f="?m=1";function g(){var b=window.location.href,c=b.split(e);switch(c.length){case 1:return b+f;case 2:return 0<=c[1].search(d)?null:b+a;default:return null}}var h=navigator.userAgent;if(-1!=h.indexOf("Mobile")&&-1!=h.indexOf("WebKit")&&-1==h.indexOf("iPad")||-1!=h.indexOf("Opera Mini")||-1!=h.indexOf("IEMobile")){var k=g();k&&window.location.replace(k)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body class='loading variant-bold'>
+<div class='navbar section' id='navbar' name='Navbar'><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d2832294983171429389\x26blogName\x3dProgrammier-Projekt+-+Hexagon\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttp://dreimannfussball.blogspot.com/search\x26blogLocale\x3dde\x26v\x3d2\x26homepageUrl\x3dhttp://dreimannfussball.blogspot.com/\x26vt\x3d4119096720765322833',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div itemscope='itemscope' itemtype='http://schema.org/Blog' style='display: none;'>
+<meta content='Programmier-Projekt - Hexagon' itemprop='name'/>
+</div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header' name='Header'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+Programmier-Projekt - Hexagon
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs no-items section' id='crosscol' name='Cross-Column'></div>
+<div class='tabs no-items section' id='crosscol-overflow' name='Cross-Column 2'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main' name='Main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Donnerstag, 19. Mai 2016</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkAAAAFQCAIAAADYxlZnAAAgAElEQVR4nO3d8U8bWYLg8fnrht3bSe8Os9pWSZyUy0UaTvgHw4QGdkUruhxi0mxNFlYZhZtOS16vgnJuE5tAN1norUDW8dBpGNyT4LgdCHIirDKsOfv27vCcT74f3nV1TRnMw5Rdr+zvR/xgKmC/9tT4S5XfK/9of38/AwCAr+zv7/8ok8nUAADwlUwmQ8AAAP5DwAAAvkTAAAC+RMAAAL5EwAAAvkTAAAC+RMAAAL5EwAAAvkTAAAC+RMAAAL5EwAAAvkTAAAC+RMAAAL5EwAAAvkTAgNofqpWbX/R9+eofvB3G0b/lxxZ+Foz2fBT74H+cHDf4yd++XT7rZ6r/t/qbxMd/+9VA5f/8bxfHZr/bFj0EcFEEDGp5lJoNRns+fX6znQ/qYsB++3Y5GO2xf23mDJlfFFWQ/A8nYECNgEEpIiR/ZwTPPQRpxeO6FbBfzP/Z/r++tr6VbNiFxtD+gLX5IQAZBAwK2T38/UexD/b/NT228DPJAxdXtC5g4qygzD3L/2SNgAG1Wo2AQR3WObRTT6b99u3y33418G8npZtf9IlTc9ZrvciP/aydTAZ2D38vfvgX83/25vBbR8Csf3WczxTlEIk99YHODdip9yxOnNZvbzyM4v80658NR13Et+JnrOY1fsZOfdDGpxAbjPOs/9WAyyNgUIV4rRcHXo4M1L4/F2e9BJ91aq7+F08lXnDFr1tTJ6zX1vp/tf5JPG6Dh3AM4FFq1n6o1OCez0pdg2Gc+mzUl8aew/r32BwDPutBGwSsuXECl0fAoAr7abH6V3PH6+ypJ/3ExnPnQdQf4dW/Utcf7thfghscRtRP4nAcxJx1z47/5HOHcdazYa/LuadGHc9Ygwc9K2BNjxO4PAIGJTj+qBevdPaTVI53fc46zSgz+6P+ZdS+xX4gKOwe/t56FT73CO/UU4hinI3v+dQDsgbDOOvZqK9Lg+I67qfBg54VsKbHCVweAYMS6g+5HqVmHdP5Gr8UXma6RH3AHEdRTQfMvqXxPZ8asAbDkAmY9Uw63gM763lo8KCNA9bEOIHLI2BQQv2ZN8d7/ue+FD5KzUrOi7voEZhjnBcNmPUWUeN7PvcIzPEo8gGz36H9t+qfsQYPKn8EJjlO4PIIGLx36muuY2Pjl0L7PALJhzvr6K3x+zSXOQJrfM+OgJ07jIsGrPbHJ/dOfcYaPOhZAWt6nMDlETB476z82CetNfeS3WCyYoNZiI7f2j38vb2jTb8H1vieT5230mAYMs+G/VckL6Vx1oM2+PXmxglcHgGD9xxzzS32V/8GL4X1b8Oc9dpqZ520/Cj2wX//X0e/SXx81loox1yScwN21lnQxvd86nt4DYYhmXP7eByxPPUZO+tB5deBXXTqDdA0AgYA8CUCBgDwJQIGAPAlAgYA8CUCBgDwJQIGAPAlAgYA8CUCBgDwJQIGAPAlAgYA8CUCBgDwJQIGAPAlAgYA8CUCBgDwJQIGAPAlqYCZpnn9+vVIJFKr1SqVSiAQ0DRN07SxsbGTk5NarWYYhtii63o7Rg0A6HpSAZubm3v8+LEVMF3XRbcE0zQHBgZKpVKlUhkcHMxms60dMgAAMgFLp9O6rqfT6bMCZhiG+CfHbQAAWuecgFWr1ZmZmVKpZA+YdQpRbCFgAID2OydgVpCsgFmsE4YEDADQfo0CVq1Wp6amNBvHHI1wOJxIJJoIWKVSufzQAQCd5w9/+IPkT8pOo68/AjNNs7+/P5vNNjeJowwAQB3JejUTMGvGvKZpiURC/Gs4HLa/K0bAAADNcT9grvP6KQIAqEi+IwQMAKAQ+Y4QMACAQuQ7QsAAAAqR7wgBAwAoRL4jBAwAoBD5jhAwAIBC5DtCwAAACpHvCAEDAChEviMEDACgEPmOEDAAgELkO0LAAAAKke8IAQMAKES+IwQMAKAQ+Y4QMACAQuQ7QsAAAAqR7wgBAwAoRL4jBAwAoBD5jhAwAPDewWHu12tjt1f6Z4xf7OXTXg/HS/IdIWAA4LGDw9zYws+Cn/84GO0JRnv+5vFfdXPD5DtCwADAY79eG7PqJb4mlv+D14PyjHxHpAJmmub169cjkYj41jAMTdM0TdN1/awtBAwAJI3E/8JeL/Hl9aA843LA5ubmHj9+LAJmmubAwECpVKpUKoODg9lstn4LAQMASan95C8e/TtHvf564S+9Hpdn3AxYOp3WdT2dTouAGYZhPxSLRCL1WwgYAMiY37onijUY/eEU4li8N/ndstdD84xrAatWqzMzM6VSiYABgItyhV19NWBF66PYnw/HrgSjPcOxD/7l9WOvR+cl1wJmBcn1gGUAoFstbTwYif3Uqtcvv/z59qtvvB6UKtwJWLVanZqa0mx0XecIDACaVjw+CiUn7W93xbfvez0otbgTMDvrCIxJHADQnMz71MTyNStd44sf7rzb9HpQymlhwGq1WjgcFgdkDbYQMACwW0qFxLtc4mv22XihmPd6UCpyP2Cu8/opAoA2OTjM3X06YqVrOHblq1efez0odcl3hIABQAttvV0fX/zQdomNa918mSgZ8h0hYADQEsXjI2uZl/h68LVePD7yelyqk+8IAQMA9+3l0/ZlXqPx3o03q14Pyh/kO0LAAMBla68XRuO9Vr2mjaGDw5zXg/IN+Y4QMABwTaGYdyzzWkqFvB6Uz8h3hIABgDt23m3al3ndXOpjmVcT5DtCwADABY5lXp89v8Uyr+bId4SAAcCl1C/zWnu94PWgfEy+IwQMAJrnWOZ1e6WfZV6XJN8RAgYAzSgeHz18MWOfr/HwxQzLvC5PviMEDAAubC+fvr3Sb1/mtfV23etBdQj5jhAwALiYtdcL9vkaLPNyl3xHCBgAyCoU8589v9WKZV477zY5/SjId4SAAYCUnXebN5f6WrHMa+fdpngLzZV78zv5jhAwADjfUipkP/AKJScvv8zr9kp/KDlZLpcLxXx8+37mfcqNkfqefEcIGAA0cnCYmzaG7PM1LrPM66tXn1tHWhPL1x58rbsyyE4i3xECBgBn2nq7br8sr74aaGKZV6GYt0423l7pH45dcXuYHUW+IwQMAE5Rv8xrfutec/MsHnytB6M9omEHhzlWOjcm3xECBgBOjmVe44sfXnSZV2o/GYz2iM8Ay7xPLaVCTDKUJN+R8wMWDoc1TdM0LRKJ1Gq1SqUSCATElrGxsZOTk1qtZhiG2KLrOgED4GuOZV53n45ILvMqHh+FkpMidZn3qWljKLWfbPFgO5BrATNNc3FxUdwYGBgolUqVSkXXddEt62esfxocHMxmswQMgB8VivnZZ+P2y/LKLPPay6fFWcFcYTcY7WFexiW5FjB7pSYmJk5OTuoDZhiGODhz3CZgAHxk592m/bK8E8vXJJd5iTVh4nbmfYpPUbkkNwMmTiFevXq1VCrV/vgUomgVAQPgd/Ht+xda5hVKTo7Ge8XPbLxZFe91wRVuBkwwTbO/v99+etA6YUjAAPjXwWFOXw3ILPPKvE/dfTqSK+yWy+UnL+dmn40zL6MV3A9YrVYLh8OJRKJ+S3MBywCA15ZfREZiP7Xq9csvf77x7brjZyLPZ7/d+Z24EYz2LL+IeDHSLuJawNLptIhW/QQN65iMSRwAfKd4fCSWZ9mXedX/2Nbbdfu8DLcufogGXAuY/R0vUTJrxry1pVY31Z6AAVDZXj49sXzNvszLMd/95lLf7LPxcrlcPD5aSoXEaUO0h2sBax2vnyIAXeqrV587lnmJuRhLqZC4tG65XA4lJ936nBRclHxHCBiAblG/zCv2u988eTkn/nXaGBqN93o6QJTLBAwAHOqXeWXep0LJyWC0h+tlKEW+IwQMQOeb37pnn68RjPb88858uVzOFXatIzAoQr4jBAxAJ8sVdn9Y5vX5j0fjvcvf/uO0McSnRypLviMEDEDH+m8v/n740QeiXoPRnvHFD5lPqD75jhAwAB2leHy0l0+LC8MPnrfMCwqS7wgBA9BRPnt+68ajn9z68mqDZV5QmXxHCBgA30vtJ6eNIfGZJvcTt4bm/9Sq1+yzcS4P7y/yHSFgAHzJfo2MtdcLwWjPi13j7tMR+zKvr1597vUwcWHyHSFgAPwkV9gVR1Sp/aT9KoWp/aRjmZc4IIPvyHeEgAHwk9F4r7hKYblcTu0nRcwcy7wefK3zQSf+Jd8RAgZAdQ9fzFjRCiUn7ScG/2iZV7RnNN7LZ0v6nXxHCBgAFWXep5ZSIXEgNfts/OZSX/3PrL1eGI33WvXSVwMHh7m2jxQuk+8IAQOgEGu+u/iwrrM+f6tQzIvLGFpf8e37bRwmWki+IwQMgCoSmS+C0R5xccJCMX9WvXbebTo+zYvPmewk8h0hYAC8VCjmby71iWjlCrvx7fuNr/a0lArZP82LZV6dR74jBAyAB9ZeL6y9XiiXyweHudF4r8wJwIPDHMu8uoF8RwgYgDYpFPPWNeBH470Ty9fkf3fr7TrLvLqEfEcIGIA2EZ+GLCYK5gq7kheGLx4fOZZ5PXwxwzKvDibfEQIGoIU23qwOx66ISRap/aQ1M17SXj7tWOa19Xa9ZYOFEuQ7cn7AwuGwpmmapkUiEbHFMAyxRdf1s7YQMKBrFYr5+PZ9cbbQHrCLcizzmjaGWObVDVwLmGmai4uL4sbAwECpVLJuVCqVwcHBbDZbv4WAAV1oL58WgRFXKXz4Yqbpu6pf5rWUCrk2UKjNtYDZSzYxMXFycmIYhv1QLBKJ1G8hYEAXGo5duft0RNzeebfZ9NtUjmVeN5f6WObVVdwMmDiFePXq1VKp5EgUAQO6nP0iT09ezl3+DSrHMq/Pnt9imVe3cTNggmma/f392WzWrYBlAPjT6mZsemX4253fZTKZT5/eml4ZduVut19988nygJWuG49+Ev/tP7hyz/AX9wNWq9XC4XAikeAIDOhCxeOj1H5SnBV8+GImGO2xVnS5Yuvtun2+xu2VfpZ5dS3XApZOpxOJRK1WazBlg0kcQMcTH3ksZlIUj49crFfx+EgUkWVeEFwLWKVSCQQCYoq8KFnttIn19VsIGOB3hWLeusiTmBnv+ttRe/n07ZV+lnnBzrWAtY7XTxGA0z18MTO/da9cLheK+btPR1p3vcG11wv2+Rp3n46wzAtlAgbgQg4Oc9ZZwZtLfbdX+lv6cIVi/rPnt+yX5WWZFyzyHSFgAMrTxpD9KoUtPRLaebd5c6nPfllelnnBTr4jBAzoUmJehvgE5J13m+ITuVptKRWyz9cIJSdZ5gUH+Y4QMKCLiI/UEhMlUvvJaWOobbPVDw5z4jjPmq8hPg8McJDvCAEDOt/Gm1XxFlfmfSoY7ZH59Eh3OZZ56asBlnnhLPIdIWBAhyseH4lLuXv16A++1u2nDee37rHMCw3Id4SAAZ1JXw2MxnvF7bXXC55MlNjLp+2X5R1f/JBlXjiXfEcIGNA5EpkvrNVU81v3QslJDwfz1avPWeaFJsh3hIAB/lY8PlpKhcRcvvj2/eHYFXevUtiEQjE/+2ycZV5ojnxHCBjgb2I2fPvnZZxl593m+OKHLPNC0+Q7QsAA/zk4zA3HroiPPLYfgXkuvn3fscyL+Rq4KPmOEDDAN0LJSesqhbPPxhOZL7we0Q8ODnP6asC+zEup4cFH5DtCwAClZd6nrAW/E8vXvJoN39jGm1XHMq9cYdfrQcGv5DtCwAAVWe8b3X06Eoz2KNuDU5d5eT0o+Jt8RwgYoJwnL+eC0Z6NN6vlcjlX2FV2EkT9Mi9xZUXgMuQ7QsAAJeQKu9PGkHjfKPM+dffpiLJHXcKTl3OOZV6KTCSB38l3hIABXlp7vSCOWvby6eHYlfZcEv6SxAdd2pd5+WLY8Av5jhAwoN0ODnPWpWw9vEphc1L7SccyL8/XTaPDyHeEgAHtdnulfzh2RdzOvE8pfqrQbn7rHsu80GryHTk/YOFwWNM0TdMikUitVqtUKoFAQGwZGxs7OTmp1WqGYYgtuq4TMKDe2uuF0XivaNVSKiTWIPtIrrDLMi+0h2sBM01zcXFR3BgYGCiVSpVKRdd10S3rZ6x/GhwczGazBAwol8uFYj6+fV9E68nLudF4r08/BCuR+YJlXmgb1wJmseJUHzDDMMTBmeM2AUN3yrxPifl4icwXwWiPr69jWzw+CiUn7acN1bnoIjqV+wEzTXNiYuLk5MR+ClG0ioABloPDXDDa8+BrXXyb2k/6912izPuUY5mXsivS0ElcDli1Wr1z547j3KB1TEbAgNsr/bPPxsvfX1q3A9bzOpZ5zT4bZ5kX2sPlgIXD4VOzFA6HE4lEcwHLAD63uhmLPJ8Vt3/55c+nV4Y9HY5rvt353a+eBK103Xj0k/nn970eFLqIawGrVqtTU1OnNsk0zf7+/mw2yyQOdI/i8ZF1dCUW83bYpwzXL/Py6cQT+JdrAUun05pNJBKxZsxrmpZIJMSPOabaEzB0qqVUKBjtETPIDw5znbSGt3h85Fjm9eBr3b9v4MG/XAtY63j9FAGy7Bd5yhV249v3O+/doL182rHMS1xKGGg/+Y4QMOB0D1/MiA/iyhV2O/tyf2KRtX2ZV4edF4W/yHeEgAE/yBV2xVnB4vHRcOzK3acjXo+otQrFPMu8oBr5jhAw4Adi2ZO4vZdPd/aByM67TZZ5QUHyHSFg6HbiIk/i2kgbb1bFacOOt5QK2Zd5ffb8Vue9sQefku8IAUM3yhV27z4dEWcL114vqP/pkS46OMw5Ps2rS5oNv5DvCAFDF9l5tynOCm68WQ1Gezp4XsZZtt6u25d53V7pZ5kXVCPfEQKGbpEr7IqPsBLfdtv7PfXLvB6+mGGZFxQk3xEChg53c6nP+sjjJy/nOmnpsbz6ZV5bb9e9HhRwOvmOEDB0oLXXC9aHBYeSk/Nb97wekZccy7ymjaHOnl0Jv5PvCAFDhygU80upkIjW7LPx4dgVXqYLxfxnz2/ZTxv6+sPJ0CXkO0LA0CHi2/eD0R4xoa5QzDM3Yefd5s2lPitdN5f6uu1tP/iUfEcIGHxMXKVQXDxCHIGxmEkQFx1mmRf8SL4jBAz+E0pOihnwYkmTuDY8hIPD3LQxxDIv+Jd8RwgY/CG1n7Sujz4a7xUffwyHrbfrjsvycioVviPfEQIGfxBv53g9CnUVj48evpixnzac37rHMi/4kXxHCBjUNb91bzh2RRxD2I/A4LCXT99e6bdflpdlXvAv+Y4QMKhlL5+eNoZS+8lyubzxZnX22Tiz4Rtbe71gvyzv3acjPGPwNfmOEDAowbpGRmo/ac2GR2OOZV7DsSss80IHkO8IAYNncoVdcazguEohZDiWeU0sX2OZFzqDfEcIGDwzGu+9vdIvblvXiYcMsWrb+golJ1nmhY4h35HzAxYOhzVN0zQtEomILYZhiC26rp+1hYDhVE9ezs0+Gxez4x6+mOGU10UdHOYcl+XldCs6jGsBM01zcXFR3BgYGCiVStaNSqUyODiYzWbrtxAw2BWK+fj2fXGIEEpOjsZ7OVxozsabVZZ5oeO5FjCLFSfDMOyHYpFIpH4LAUO5XLY+uERc1ojrZVxG8fjowdc6y7zQDdwPmGmaExMTJycnBAwyMu9T1kceF4+PxLR4NGcvn55YvsYyL3QJlwNWrVbv3Lkjzg26FbBMF9t+9c2dfxr6L1/8x6nlwMa3614Px03TK8P/+OzvMpnM9qtvfvUkaGwteT0i35t/fv/Go59Y9frVk+D2q2+8HhTQQi4HLBwOn5oojsCacHCYG1v4WfDzH4vXo795/Fd+fxtj482qmEdQPD66udTHbHi3FIr52Wfj9mVe4ogW6GyuBaxarU5NTdmbxCSOS/r12phVL/H1UezKtDEkvu4+HYlv36//2nq7ntpPOr48nHdePD6y3uKaWL42HLvi1Ug61c67zfHFD+3LvKwnHOhsrgUsnU5rNqJk9RPr67cQsLOMxP/CXi/Xv8YXP7Ry2LouiuvGipfUXGHX7weRqqlf5sV8DXQP1wLWOl4/RZ6xX3TVR1/jix9+svKfhub/dPLJ9Wlj6PY//fw/f/Hv/9644YvjRR+pX+bF7E10G/mOELB2S+0nx+I/tV6hRmJ/Ht/61HqV33izemoS6g+qpo0h+5Ign36153jRL+qXeeUKu14PCmg3+Y4QMA9svV0XJxKHYx/8y+vH7t55rrBb/ypPF9Xs4sFh7tdrY7dX+qf/efC/2uZrBKM981v32jAAQEHyHSFgOMVovHdi+Zq4nXmfKhTzdNH1Ljrmowajf2I9Csvm0M3kO0LA8P89fDFzc6lPXORp7fVCe66w181dHIz+iWM+6mD0x3efjnCdLXQ5+Y4QsK62l09bVym0B8zv/NtFr585wHvyHSFg3Wjn3aaYlv3k5Vww2rPxZtXrEfmDy12cd9brrxf+0uv/RMB78h0hYF1n591mMNojPsekeHzEpyB6xTEfdSzem/xu2etBAd6T7wgB6xbWRZ6Kx0fx7ftc1kEFLZ2PCviUfEcIWCdbSoUevpgRt2efjce373s6HAA4n3xHCFinKRTz1lnB2yv9o/FeT4cDABcj3xEC1mlCyclgtEc07OAwx6UcAPiLfEcIWCdI7SeD0R6xcivzPvXk5RzXfgXgU/IdIWB+VTw+CiUnxZVe9/LpaWOIyzcA6ADyHSFgPiPWHpXL5YPD3HDsyoOvda9HBABuku8IAfOZYLTn5lKfuC2uUujteADAXfIdIWA+EEpOjsZ7Ras23qxy4QwAHUy+IwRMUan95N2nI2IO4ZOXc7PPxpmXAaAbyHeEgKnlycs5caT11avPg9GerbfrXo8IANpKviMETCFbb9eD0R6ulwGgm8l35PyAVavVqampsbGxk5OTWq1WqVQCgYCmaZqmWRsNwxBbdF0nYBc1Gu+dfTZeLpeLx0dLqRBLjwF0M9cCVqlUBgcHE4nExMSEFTBd18VtwTTNgYGBUqkkfjibzRKwc81v3ROX1i2Xy6Hk5JOXc96OBwAU4VrArEQ1CJhhGJFIpP42AWtg2hiyZsMDACytDZh1ClG0ioABANzSwoBZrBOGzQUsAwBAnXYErFarhcPhRCLBERgAwC3tCJhpmv39/dlslkkcAAC3uBYw+ztemqaJ4y37t+LHwuGw/V0xAgYAaI5rAWsdr58iAICK5DtCwAAACpHvCAEDAChEviMEDACgEPmOEDAAgELkO0LAAAAKke8IAQMAKES+IwQMAKAQ+Y4QMACAQuQ7QsAAAAqR7wgBAwAoRL4jBAwAoBD5jhAwAIBC5DtCwAAACpHvCAEDAChEviMEDACgEPmOEDAAgELkO0LAAAAKke8IAQMAKES+IwQMAKAQ+Y6cH7BqtTo1NTU2NnZyciK2GIahaZqmabqun7WFgAEAmuBawCqVyuDgYCKRmJiYEAEzTXNgYKBUKol/ymaz9VsIGACgOa4FTDBN0wqYYRiRSERsF7frtxAwAEBzCBgAwJcIGADAl3wQsAwAAHVaGDAmcQAAWse1gFUqlUAgoH0vkUjUarVwOCy+tQ626rcQMABAE1wLWOt4/RQBAFQk3xECBgBQiHxHCBgAQCHyHSFgAACFyHeEgAEAFCLfEQIGAFCIfEcIGABAIfIdIWAAAIXId4SAAQAUIt8RAgYAUIh8RwgYAEAh8h0hYAAAhch3hIABABQi3xECBgBQiHxHCBgAQCHyHSFgAACFyHeEgAEAFCLfEQIGAFCIfEcIGABAIfIdIWAAAIXId4SAAQAUIt+RCwesUqkEAgFN0zRNGxsbOzk5qdVqhmGILbquEzAAQNNaGzBd10W3BNM0BwYGSqVSpVIZHBzMZrMEDADQnLYGzDCMSCRSf5uAAQAuqrUBs04hilYRMACAW1oYMHvJxAnD5gKWAQCgTjsCVqvVwuFwIpHgCAwA4Bb5BjUfMNM0+/v7s9kskzgAAG5pYcCsGfOapiUSCbExHA7b3xUjYACA5rQwYG7x+ikCAKhIviMEDACgEPmOEDAAgELkO0LAAAAKke8IAQMAKES+IwQMAKAQ+Y4QMACAQuQ7QsAAAAqR7wgBAwAoRL4jBAwAoBD5jhAwAIBC5DtCwAAACpHvCAEDAChEviMEDACgEPmOEDAAgELkO0LAAAAKke8IAQMAKES+IwQMAKAQ+Y4QMACAQuQ7QsAAAAqR74g7ATMMQ9M0TdN0XZf8Fa+fIgCAiuTT40LATNMcGBgolUqVSmVwcDCbzcr8ltdPEQBARfL1cSFghmFEIpH62415/RQBAFQkXx8CBgBQiHx9CBgAQCHy9fEmYLu7uxkgk/nuu++8HgKUwJ4Ay+7urmR9Mp5M4rjkI6JjsCdAYE+ARX5ncCFgtVotHA6LafSS5w/ZWSGwJ0BgT4Cl3QG7qL29vTY/ItTEngCBPQEW+Z3Bm4ABAHBJBAwA4EsEDADgSwQMAOBLBAwA4EsEDADgSwQMAOBLBOxiKpVKIBAYGxs7OTkRW6rV6tTU1NWrV0ulUtuGIR7UPgy0nyI7w0UvIwDXsSd4hYBdjLhc1scff2xdMcs0zY8//lhcTKudY0gkEhMTEwTMQyrsDKZpLi4u1mxXdGvP48KOPcErBOxiKpXKjRs3YrGY/frFhmHcuHFD7DGmaV6/ft3+d5D1Z5H4c8z+7eHhofWL4p4PDw91Xf/000/FzyQSCfGnnPa9RCIhHtc0TQLmLXV2htr3r6GSHycLdym1J3TVKwMBuxixP2WzWbGLVKvVmZkZa4cT/yr2vGq1eufOncePH+u6bv16Op22f2v/eWtPDQQCYhcXO+L29rb4FcfvdtVuqiZ1doYa+4OnFNkTRAXbfN7SWwTsYqx9KxwOJxIJsfdYG+1/ZwmGYQQCgb6+PvGnsThXbv+2fk91bNnY2CBgalJnZxAvixx+eUWdPaFWq5mm2d/f3yU7AwG7GGvfEvuN2F/te+qpUXG8o2t9e+q5AseWbDYr9n5r/xYImOfU2U9GjO8AAAEBSURBVBnC4XD3vG+vIHX2BEEMoC3/6R4jYBdj7ZTijyax89k3NngfwrFXhcPh9fV16w9nwzBO3Xdjsdip+yIB85wKO4N41aNe3lJhT0in02JLV70bSsAuxn50b/3Za99oP11w9erVWCxmnTfQdd0wDPu3tVotnU6Lbz/55BP7efOa7VyB9Stinq74P8mp79+inVTYGaxfsU8QQJupsCfYXxa65zWBgKnO+gON9znAzgCBPUEgYKqz/+3meLcW3YadAQJ7gkDAAAC+RMAAAL5EwAAAvkTAAAC+RMAAAL5EwAAAvkTAAAC+RMAAAL5EwAAAvpTJZH6UzWYzAAD4Sjab/X+xuk5dfMkduAAAAABJRU5ErkJggg==' itemprop='image_url'/>
+<meta content='2832294983171429389' itemprop='blogId'/>
+<meta content='7473126635392797587' itemprop='postId'/>
+<a name='7473126635392797587'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='http://dreimannfussball.blogspot.ch/2016/05/qulitatsmerkmale-messung-3.html'>Qulitätsmerkmale: Messung 3</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-7473126635392797587' itemprop='description articleBody'>
+Am 19.5.16 hat unsere letzte Messung der Befehlszeilen, der Javadoc-Kommentare, sowie der Methoden stattgefunden. Unten die Messergebnisse:<br />
+<br />
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><br />
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>DE-CH</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+ {mso-style-name:"Normale Tabelle";
+ mso-tstyle-rowband-size:0;
+ mso-tstyle-colband-size:0;
+ mso-style-noshow:yes;
+ mso-style-priority:99;
+ mso-style-parent:"";
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-para-margin-top:0cm;
+ mso-para-margin-right:0cm;
+ mso-para-margin-bottom:8.0pt;
+ mso-para-margin-left:0cm;
+ line-height:107%;
+ mso-pagination:widow-orphan;
+ font-size:11.0pt;
+ font-family:"Calibri",sans-serif;
+ mso-ascii-font-family:Calibri;
+ mso-ascii-theme-font:minor-latin;
+ mso-hansi-font-family:Calibri;
+ mso-hansi-theme-font:minor-latin;
+ mso-fareast-language:EN-US;}
+table.MsoTableGrid
+ {mso-style-name:Tabellenraster;
+ mso-tstyle-rowband-size:0;
+ mso-tstyle-colband-size:0;
+ mso-style-priority:39;
+ mso-style-unhide:no;
+ border:solid windowtext 1.0pt;
+ mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-border-insideh:.5pt solid windowtext;
+ mso-border-insidev:.5pt solid windowtext;
+ mso-para-margin:0cm;
+ mso-para-margin-bottom:.0001pt;
+ mso-pagination:widow-orphan;
+ font-size:11.0pt;
+ font-family:"Calibri",sans-serif;
+ mso-ascii-font-family:Calibri;
+ mso-ascii-theme-font:minor-latin;
+ mso-hansi-font-family:Calibri;
+ mso-hansi-theme-font:minor-latin;
+ mso-fareast-language:EN-US;}
+</style>
+<![endif]-->
+
+<table border="1" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="border-collapse: collapse; border: none; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184;">
+ <tbody>
+<tr style="mso-yfti-firstrow: yes; mso-yfti-irow: 0;">
+  <td style="background: #D9D9D9; border: solid windowtext 1.0pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.0pt;" valign="top" width="252">
+  <div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
+<span style="font-size: 14.0pt; mso-bidi-font-size: 11.0pt;">SVN-Revision: 2663</span></div>
+</td>
+  <td style="background: #D9D9D9; border-left: none; border: solid windowtext 1.0pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" valign="top" width="252">
+  <div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
+<span style="font-size: 14.0pt; mso-bidi-font-size: 11.0pt;">Messwert</span></div>
+</td>
+  <td style="background: #D9D9D9; border-left: none; border: solid windowtext 1.0pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" valign="top" width="252">
+  <div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
+<span style="font-size: 14.0pt; mso-bidi-font-size: 11.0pt;">Deutung des Wertes</span></div>
+</td>
+ </tr>
+<tr style="mso-yfti-irow: 1;">
+  <td style="background: #D9D9D9; border-top: none; border: solid windowtext 1.0pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.0pt;" valign="top" width="252">
+  <div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
+<span style="font-size: 14.0pt; mso-bidi-font-size: 11.0pt;">Anzahl Methoden:</span></div>
+</td>
+  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" width="252">
+  <div align="right" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: right;">
+<span lang="FR-CH" style="color: black; mso-ansi-language: FR-CH; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;">571(inkl.
+  Unit Test) </span></div>
+<div align="right" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: right;">
+<span lang="FR-CH" style="color: black; mso-ansi-language: FR-CH; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;">555(exkl.
+  Unit Test)</span></div>
+</td>
+  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" width="252">
+  <div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+Dieser starke Anstieg ist mit dem Hinzufügen von Get/Set-Methoden für
+  jede Variable zu begründen</div>
+</td>
+ </tr>
+<tr style="height: 20.8pt; mso-yfti-irow: 2;">
+  <td style="background: #D9D9D9; border-top: none; border: solid windowtext 1.0pt; height: 20.8pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.0pt;" valign="top" width="252">
+  <div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
+<span style="font-size: 14.0pt; mso-bidi-font-size: 11.0pt;">Anzahl Befehlszeilen:</span></div>
+</td>
+  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; height: 20.8pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" width="252">
+  <div align="right" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: right;">
+<span style="color: black; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;">2763</span></div>
+</td>
+  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; height: 20.8pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" width="252">
+  <div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+-</div>
+</td>
+ </tr>
+<tr style="mso-yfti-irow: 3;">
+  <td style="background: #D9D9D9; border-top: none; border: solid windowtext 1.0pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.0pt;" valign="top" width="252">
+  <div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
+<span style="font-size: 14.0pt; mso-bidi-font-size: 11.0pt;">Durchsch. Anzahl Befehlszeilen:</span></div>
+</td>
+  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" width="252">
+  <div align="right" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: right;">
+<span style="color: black; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;">4,838879159</span></div>
+</td>
+  <td style="background: #00B050; border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" width="252">
+  <div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+Ein sehr erfreulicher Wert</div>
+</td>
+ </tr>
+<tr style="mso-yfti-irow: 4;">
+  <td style="background: #D9D9D9; border-top: none; border: solid windowtext 1.0pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.0pt;" width="252">
+  <div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
+<span style="font-size: 14.0pt; mso-bidi-font-size: 11.0pt;">Umfangreichste Methode</span></div>
+</td>
+  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" width="252">
+  <div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
+<span style="color: black; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;">Methode &#8222;updateLobby&#8220; mit 74
+  Befehlszeilen (Klasse: ClientMessageHandler)</span></div>
+</td>
+  <td style="background: red; border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" width="252">
+  <div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+Diese Methode ist zu lang</div>
+</td>
+ </tr>
+<tr style="mso-yfti-irow: 5; mso-yfti-lastrow: yes;">
+  <td style="background: #D9D9D9; border-top: none; border: solid windowtext 1.0pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.0pt;" valign="top" width="252">
+  <div align="center" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: center;">
+<span style="font-size: 14.0pt; mso-bidi-font-size: 11.0pt;">Anzahl Methoden kommentiert mit Javadoc</span></div>
+</td>
+  <td style="border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" width="252">
+  <div align="right" class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm; text-align: right;">
+<span style="color: black; mso-ascii-font-family: Calibri; mso-hansi-font-family: Calibri;">533 (96.03 %)</span></div>
+</td>
+  <td style="background: #00B050; border-bottom: solid windowtext 1.0pt; border-left: none; border-right: solid windowtext 1.0pt; border-top: none; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 151.05pt;" width="252">
+  <div class="MsoNormal" style="line-height: normal; margin-bottom: .0001pt; margin-bottom: 0cm;">
+Ein sehr erfreulicher Wert</div>
+</td>
+ </tr>
+</tbody></table>
+&nbsp;<br />
+Dies ist unsere letzte Messung. Es ist interessant zu sehen, wie sich die Ergebnisse/Resultate im Laufe der Zeit verändert haben. Wir erwarteten einen linearen Anstieg aller Messresultate. Jedoch sind bei allen Messungen am 7/8/9 Mai Einbrüche feststellbar. Jedoch ist es nicht schwer, diese "komischen" Messresultate zu erklären. Wir krämpelten unser ganzes Programmier-Konzept um, löschten viele unnütze Methoden und schrieben diese um (leider ohne Javadoc). Ein weiterer auffälliger Punkt sind die enorm gestiegene Anzahl Methoden und Befehlszeilen bei der Messung Nr.3. Dies ist der Errichtung von Getter-/Setter-Methoden für alle Feldvariablen zu verdanken:<br />
+<br />
+<br />
+<img alt="" src="data:image/png;base64,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" /><img alt="" src="data:image/png;base64,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" /><img alt="" src="data:image/png;base64,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" />
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Verfasst von
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/105990536467293805346' itemprop='url'/>
+<a class='g-profile' href='https://plus.google.com/105990536467293805346' rel='author' title='author profile'>
+<span itemprop='name'>Elias Arnold</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+am
+<meta content='http://dreimannfussball.blogspot.com/2016/05/qulitatsmerkmale-messung-3.html' itemprop='url'/>
+<a class='timestamp-link' href='http://dreimannfussball.blogspot.ch/2016/05/qulitatsmerkmale-messung-3.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2016-05-19T06:04:00-07:00'>06:04:00</abbr></a>
+</span>
+<span class='reaction-buttons'>
+<table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
+<td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
+<span class='reactions-label'>
+Reactions:</span>&#160;</td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bwow!,+weiter+so!,+ich+will+mehr!!%5D&amp;textColor=%23666666#http://dreimannfussball.blogspot.com/2016/05/qulitatsmerkmale-messung-3.html'></iframe></td>
+</tr></table>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://dreimannfussball.blogspot.ch/2016/05/qulitatsmerkmale-messung-3.html#comment-form' onclick=''>
+Keine Kommentare:
+    </a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-291168303'>
+<a href='https://www.blogger.com/post-edit.g?blogID=2832294983171429389&postID=7473126635392797587&from=pencil' title='Post bearbeiten'>
+<img alt='' class='icon-action' height='18' src='https://img1.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+          </div></div>
+        
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Montag, 9. Mai 2016</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='2832294983171429389' itemprop='blogId'/>
+<meta content='7449610771397977929' itemprop='postId'/>
+<a name='7449610771397977929'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='http://dreimannfussball.blogspot.ch/2016/05/bis-meilenstein-4.html'>Bis Meilenstein 4</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-7449610771397977929' itemprop='description articleBody'>
+<h3>
+Planung</h3>
+<div>
+Nach der Rückmeldung zum dritten Meilenstein wird besprochen was nun zu tun ist. Aus vergangenen Erfahrungen wird nun eine ausführlichere Aufgabenzuteilung erstellt; Die TODO's werden aufgelistet und fair auf alle Gruppenmitglieder verteilt.</div>
+<div>
+<br /></div>
+<div>
+Beispielsweise muss das Reconnect-System überarbeitet oder die Art und Weise, wie das Spiel gestartet wird, an die Projektanforderungen angepasst werden.</div>
+<div>
+<br /></div>
+<h3>
+Features</h3>
+<div>
+<h4>
+Neue Features</h4>
+</div>
+<div>
+<ul>
+<li>Ingame Zeitanzeige</li>
+<li>Optionen für den Gameleader in der Lobby</li>
+<ul>
+<li>Spielzeit</li>
+<li>Bots An/Aus</li>
+</ul>
+<li>Online Spieler in einer Liste angezeigt</li>
+<li>Spiel wird einfefroren, wenn ein Spieler die Verbindung verliert</li>
+<li>Spiel wird beendet, wenn der Spieler nach 1 Minute nicht zurückkehrt</li>
+<li>Systembenutzername wird als Benutzernamen vorgeschlagen</li>
+</ul>
+<h4>
+Vorgenommene Änderungen</h4>
+</div>
+<div>
+<ul>
+<li>Alte Spiele sind jetzt in einer Liste anstelle von Popups aufrufbar</li>
+<li>Spieler und Ball sind jetzt etwas kleiner, um das Spiel etwas spannender zu machen</li>
+</ul>
+<h4>
+COMING SOON&trade;!</h4>
+<div>
+<ul>
+<li>Spieler werden kleiner, je näher sie am eigenen Tor stehen</li>
+<li>Spieler werden langsamer, je näher sie am eigenen Tor stehen</li>
+</ul>
+<div>
+Diese zukünftigen Änderungen sollen den allgemeinen Spielverlauf spannender machen.<br />
+<br /></div>
+</div>
+<h3>
+Behind the Scenes</h3>
+</div>
+<div>
+Im Hintergrund mussten einige Massnahmen ergriffen werden. Einserseits wurde das SVN-Repository aufgeräumt, andererseits wurde im Code selbst etwas aufgeräumt.</div>
+<div>
+<br /></div>
+<div>
+Beispielsweise mussten User-Objekte auf dem Server in einer HashMap anstelle einer ArrayList gespeichert werden, um Abmeldungen zu vereinfachen.</div>
+<div>
+<br /></div>
+<h3>
+Qualitätsanforderungen</h3>
+<div>
+Man hat beschlossen, von nun an in regelmässigen Zeitabständen alle Methoden auf ihre Zeilenanzah zu überprüfen. Die Ergebnisse werden kurz analysiert und Klassen mit mehr als den erwünschten 30 Befehlszeilen werden überarbeitet; Bestenfalls, wenn möglich, vereinfacht, ansonsten auf mehrere Methoden aufgeteilt.</div>
+<div>
+<br /></div>
+<div>
+Die Resultate der jeweiligen Messungen werden auf diesem Blog zu sehen sein.</div>
+<div>
+<br /></div>
+<h3>
+JUnit test</h3>
+<div>
+Bei den tests mussten wir uns mehrmals neu einigen, welche Klasse getestet werden sollte. Anfangs entschied man sich, die sogenannte Vektor-Klasse zu testen, welche Funktionen wie Vektorrotation und Vektoraddition bietet zu testen. Dies wurde jedoch vom Tutor abgeraten, da die Klasse nicht so sehr im Mittelpunkt des Projektes steht und eventuell etwas zu einfach zu testen wird.</div>
+<div>
+<br /></div>
+<div>
+Man entschied sich um für die Klasse Lobby, welche Spieler und laufende Spiele verwaltet. Diese wahl fürte zu einem weit grösserem Problem als zu erwarten war. Die Art der implementierung der Klasse entpuppte sich als grober Designfehler, da sowohl Server und Client ein Objekt derselben Klasse erstellten, jedoch jeweils verschiedene Konstruktoren und Funktionen benutzten. Nun musste vorerst die Klasse überarbeitet werden, bevor der JUnit-test ausgeführt werden konnte.</div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Verfasst von
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/09347378156021470836' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/09347378156021470836' rel='author' title='author profile'>
+<span itemprop='name'>Maximilian Reber</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+am
+<meta content='http://dreimannfussball.blogspot.com/2016/05/bis-meilenstein-4.html' itemprop='url'/>
+<a class='timestamp-link' href='http://dreimannfussball.blogspot.ch/2016/05/bis-meilenstein-4.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2016-05-09T05:34:00-07:00'>05:34:00</abbr></a>
+</span>
+<span class='reaction-buttons'>
+<table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
+<td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
+<span class='reactions-label'>
+Reactions:</span>&#160;</td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bwow!,+weiter+so!,+ich+will+mehr!!%5D&amp;textColor=%23666666#http://dreimannfussball.blogspot.com/2016/05/bis-meilenstein-4.html'></iframe></td>
+</tr></table>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://dreimannfussball.blogspot.ch/2016/05/bis-meilenstein-4.html#comment-form' onclick=''>
+Keine Kommentare:
+    </a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-330636000'>
+<a href='https://www.blogger.com/post-edit.g?blogID=2832294983171429389&postID=7449610771397977929&from=pencil' title='Post bearbeiten'>
+<img alt='' class='icon-action' height='18' src='https://img1.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://4.bp.blogspot.com/-9gilOZb7gvA/VzB4hpqUPwI/AAAAAAAAAEA/Qa87SUleaTcPbvsqkp-CBWyOXtckNJUBACLcB/s640/blablabla.JPG' itemprop='image_url'/>
+<meta content='2832294983171429389' itemprop='blogId'/>
+<meta content='962216432676973540' itemprop='postId'/>
+<a name='962216432676973540'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='http://dreimannfussball.blogspot.ch/2016/05/qualitatsmerkmale-messung-nr2.html'>Qualitätsmerkmale: Messung Nr.2</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-962216432676973540' itemprop='description articleBody'>
+In der Zwischenzeit (seit der letzten Messung) ist unser Code schon viel übersichtlicher und kleiner geworden. Viele überflüssige Methoden sind verschwunden, und die, die wir als wichtig erachten, sind im Durchschnitt 0.3 Zeilen kleiner geworden. Leider sind in den Messergebnissen noch keine gravierenden Veränderungen sichtbar. Es sind nämlich auch viele neue Methoden geschrieben worden. Zum Beispiel fügten wir unserem Projekt eine neue Klasse für den JUnit Test hinzu. Auch die Auskommentierung mit Javadoc lässt noch zu wünschen übrig. Jedoch lag unser Fokus (bis jetzt) eher auf der Aussortierung von redundantem(nicht unbedingt notwendigem) Code. Hier die Testergebnisse:
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://4.bp.blogspot.com/-9gilOZb7gvA/VzB4hpqUPwI/AAAAAAAAAEA/Qa87SUleaTcPbvsqkp-CBWyOXtckNJUBACLcB/s1600/blablabla.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="272" src="https://4.bp.blogspot.com/-9gilOZb7gvA/VzB4hpqUPwI/AAAAAAAAAEA/Qa87SUleaTcPbvsqkp-CBWyOXtckNJUBACLcB/s640/blablabla.JPG" width="640" /></a></div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Verfasst von
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/105990536467293805346' itemprop='url'/>
+<a class='g-profile' href='https://plus.google.com/105990536467293805346' rel='author' title='author profile'>
+<span itemprop='name'>Elias Arnold</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+am
+<meta content='http://dreimannfussball.blogspot.com/2016/05/qualitatsmerkmale-messung-nr2.html' itemprop='url'/>
+<a class='timestamp-link' href='http://dreimannfussball.blogspot.ch/2016/05/qualitatsmerkmale-messung-nr2.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2016-05-09T04:48:00-07:00'>04:48:00</abbr></a>
+</span>
+<span class='reaction-buttons'>
+<table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
+<td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
+<span class='reactions-label'>
+Reactions:</span>&#160;</td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bwow!,+weiter+so!,+ich+will+mehr!!%5D&amp;textColor=%23666666#http://dreimannfussball.blogspot.com/2016/05/qualitatsmerkmale-messung-nr2.html'></iframe></td>
+</tr></table>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://dreimannfussball.blogspot.ch/2016/05/qualitatsmerkmale-messung-nr2.html#comment-form' onclick=''>
+Keine Kommentare:
+    </a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-291168303'>
+<a href='https://www.blogger.com/post-edit.g?blogID=2832294983171429389&postID=962216432676973540&from=pencil' title='Post bearbeiten'>
+<img alt='' class='icon-action' height='18' src='https://img1.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://1.bp.blogspot.com/-HwYMpTT27Ws/VzCM5ODJNLI/AAAAAAAAAIo/tnZnP37LC3kp-roJjUfnaV5zmKr-vNHQQCLcB/s400/ingame_timer_scoreboard_gameboard.PNG' itemprop='image_url'/>
+<meta content='2832294983171429389' itemprop='blogId'/>
+<meta content='4046258557953010296' itemprop='postId'/>
+<a name='4046258557953010296'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='http://dreimannfussball.blogspot.ch/2016/05/screenshot.html'>Screenshot</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-4046258557953010296' itemprop='description articleBody'>
+<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
+<tr><td style="text-align: center;"><a href="https://1.bp.blogspot.com/-HwYMpTT27Ws/VzCM5ODJNLI/AAAAAAAAAIo/tnZnP37LC3kp-roJjUfnaV5zmKr-vNHQQCLcB/s1600/ingame_timer_scoreboard_gameboard.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="157" src="https://1.bp.blogspot.com/-HwYMpTT27Ws/VzCM5ODJNLI/AAAAAAAAAIo/tnZnP37LC3kp-roJjUfnaV5zmKr-vNHQQCLcB/s400/ingame_timer_scoreboard_gameboard.PNG" width="400" /></a></td></tr>
+<tr><td class="tr-caption" style="text-align: center;">Erste GUI</td></tr>
+</tbody></table>
+<br />
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Verfasst von
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/09347378156021470836' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/09347378156021470836' rel='author' title='author profile'>
+<span itemprop='name'>Maximilian Reber</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+am
+<meta content='http://dreimannfussball.blogspot.com/2016/05/screenshot.html' itemprop='url'/>
+<a class='timestamp-link' href='http://dreimannfussball.blogspot.ch/2016/05/screenshot.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2016-05-09T01:00:00-07:00'>01:00:00</abbr></a>
+</span>
+<span class='reaction-buttons'>
+<table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
+<td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
+<span class='reactions-label'>
+Reactions:</span>&#160;</td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bwow!,+weiter+so!,+ich+will+mehr!!%5D&amp;textColor=%23666666#http://dreimannfussball.blogspot.com/2016/05/screenshot.html'></iframe></td>
+</tr></table>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://dreimannfussball.blogspot.ch/2016/05/screenshot.html#comment-form' onclick=''>
+Keine Kommentare:
+    </a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-330636000'>
+<a href='https://www.blogger.com/post-edit.g?blogID=2832294983171429389&postID=4046258557953010296&from=pencil' title='Post bearbeiten'>
+<img alt='' class='icon-action' height='18' src='https://img1.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+          </div></div>
+        
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Dienstag, 3. Mai 2016</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='2832294983171429389' itemprop='blogId'/>
+<meta content='5066596202612908724' itemprop='postId'/>
+<a name='5066596202612908724'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='http://dreimannfussball.blogspot.ch/2016/05/build-file.html'>Build File</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-5066596202612908724' itemprop='description articleBody'>
+Das Build file <i>build.xml</i> erzeugt einen build Ordner <i>bin</i>, einen Ordner<i>&nbsp;doc, </i>der die javadoc enthält und ein Distributionsfile <i>Hexagon.jar</i>, das über die Console mit den befehlen<code><br />java -jar Hexagon.jar server &lt;port&gt;<br />java -jar Hexagon.jar client &lt;ipadress&gt;:&lt;port&gt;</code><br />
+einen Server bzw. einen Client startet.
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Verfasst von
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/102063619952721490060' itemprop='url'/>
+<a class='g-profile' href='https://plus.google.com/102063619952721490060' rel='author' title='author profile'>
+<span itemprop='name'>Andrea Tuccillo</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+am
+<meta content='http://dreimannfussball.blogspot.com/2016/05/build-file.html' itemprop='url'/>
+<a class='timestamp-link' href='http://dreimannfussball.blogspot.ch/2016/05/build-file.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2016-05-03T02:03:00-07:00'>02:03:00</abbr></a>
+</span>
+<span class='reaction-buttons'>
+<table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
+<td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
+<span class='reactions-label'>
+Reactions:</span>&#160;</td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bwow!,+weiter+so!,+ich+will+mehr!!%5D&amp;textColor=%23666666#http://dreimannfussball.blogspot.com/2016/05/build-file.html'></iframe></td>
+</tr></table>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://dreimannfussball.blogspot.ch/2016/05/build-file.html#comment-form' onclick=''>
+Keine Kommentare:
+    </a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-146463357'>
+<a href='https://www.blogger.com/post-edit.g?blogID=2832294983171429389&postID=5066596202612908724&from=pencil' title='Post bearbeiten'>
+<img alt='' class='icon-action' height='18' src='https://img1.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+          </div></div>
+        
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Montag, 2. Mai 2016</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='2832294983171429389' itemprop='blogId'/>
+<meta content='3450922094592738001' itemprop='postId'/>
+<a name='3450922094592738001'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='http://dreimannfussball.blogspot.ch/2016/05/qualitatsmasse.html'>Qualitätsmerkmale: Messung Nr.1</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-3450922094592738001' itemprop='description articleBody'>
+Soeben haben wir unsere Qualitätsmasse zum ersten Mal gemessen. Die Resultate sprechen eine sehr zwiespältige Sprache. Einerseits liegt unsere Methodengrösse mit 7,4 Befehlszeilen pro Methode deutlich unter der oberen Schranke von 30 Befehlszeilen. Andererseits sind (bis jetzt) nur 65% aller Methoden kommentiert. Hier ist ein deutlicher Aufholbedarf hinsichtlich des Zieles von 95% sichtbar.
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Verfasst von
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/105990536467293805346' itemprop='url'/>
+<a class='g-profile' href='https://plus.google.com/105990536467293805346' rel='author' title='author profile'>
+<span itemprop='name'>Elias Arnold</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+am
+<meta content='http://dreimannfussball.blogspot.com/2016/05/qualitatsmasse.html' itemprop='url'/>
+<a class='timestamp-link' href='http://dreimannfussball.blogspot.ch/2016/05/qualitatsmasse.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2016-05-02T01:53:00-07:00'>01:53:00</abbr></a>
+</span>
+<span class='reaction-buttons'>
+<table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
+<td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
+<span class='reactions-label'>
+Reactions:</span>&#160;</td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bwow!,+weiter+so!,+ich+will+mehr!!%5D&amp;textColor=%23666666#http://dreimannfussball.blogspot.com/2016/05/qualitatsmasse.html'></iframe></td>
+</tr></table>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://dreimannfussball.blogspot.ch/2016/05/qualitatsmasse.html#comment-form' onclick=''>
+Keine Kommentare:
+    </a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-291168303'>
+<a href='https://www.blogger.com/post-edit.g?blogID=2832294983171429389&postID=3450922094592738001&from=pencil' title='Post bearbeiten'>
+<img alt='' class='icon-action' height='18' src='https://img1.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+          </div></div>
+        
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Montag, 18. April 2016</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='2832294983171429389' itemprop='blogId'/>
+<meta content='8604176988193909511' itemprop='postId'/>
+<a name='8604176988193909511'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='http://dreimannfussball.blogspot.ch/2016/04/bis-meileinstein-3-timeline-feedback.html'>Bis Meilenstein 3</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-8604176988193909511' itemprop='description articleBody'>
+<h3>
+Timeline</h3>
+<h4>
+</h4>
+<h4>
+Feedback vom MS 2</h4>
+<div>
+Nach dem Feedback von Filip Rinkmann wird das Projekt einmal überarbeitet. Als erstes wird das Netzwerkprotokoll in zwei enums aufgelistet (Commands, Options), welche über ein informatives Javadoc verfügen, in welchem angegeben ist, welcher Command welche Options und welche Argumente braucht.</div>
+<div>
+Ausserdem wird im SVN Repository aufgeräumt.</div>
+<div>
+<br /></div>
+<h4>
+Verknüpfung Server/Client</h4>
+<div>
+Das bisherige Server/Client Projekt wird mit der entstehenden GUI und Game Logik gekreuzt. Dabei wird festgestellt, dass ein UDP Protokoll gar nicht zwingend nötig ist. Folglich werden nun auch die Ingame Informationen über kleine Erweiterungen des bestehenden TCP Protokoll übergeben.</div>
+<div>
+Das einzige Problem damit sind kleine Performanceeinbüssungen.</div>
+<div>
+<br /></div>
+<div>
+Man entscheidet, doch eine UDP-Logik zu erstellen, welche aber nicht Zeitgerecht zur Abgabe des 3. Meilensteins funktionieren will. Schlussendlich gibt man sich so weit zufrieden und nimmt sich vor, die Sache nach der Präsentation noch einmal genauer anzugehen.</div>
+<div>
+<br /></div>
+<h4>
+Builddateien</h4>
+<div>
+Unterdessen wird mit dem JAR-Buildtool ANT gekämpft. Das Tool generiert mit einem XML-Anweisungsscript eine Ausführbare JAR-Datei, welche aber lange nur den Fehler "Could not find Main-Class" ausspuckt.</div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+Verfasst von
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://www.blogger.com/profile/09347378156021470836' itemprop='url'/>
+<a class='g-profile' href='https://www.blogger.com/profile/09347378156021470836' rel='author' title='author profile'>
+<span itemprop='name'>Maximilian Reber</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+am
+<meta content='http://dreimannfussball.blogspot.com/2016/04/bis-meileinstein-3-timeline-feedback.html' itemprop='url'/>
+<a class='timestamp-link' href='http://dreimannfussball.blogspot.ch/2016/04/bis-meileinstein-3-timeline-feedback.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2016-04-18T06:34:00-07:00'>06:34:00</abbr></a>
+</span>
+<span class='reaction-buttons'>
+<table border='0' cellpadding='0' cellspacing='0' width='100%'><tr>
+<td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'>
+<span class='reactions-label'>
+Reactions:</span>&#160;</td>
+<td><iframe allowtransparency='true' class='reactions-iframe' frameborder='0' name='reactions' scrolling='no' src='https://www.blogger.com/blog-post-reactions.g?options=%5Bwow!,+weiter+so!,+ich+will+mehr!!%5D&amp;textColor=%23666666#http://dreimannfussball.blogspot.com/2016/04/bis-meileinstein-3-timeline-feedback.html'></iframe></td>
+</tr></table>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link' href='http://dreimannfussball.blogspot.ch/2016/04/bis-meileinstein-3-timeline-feedback.html#comment-form' onclick=''>
+Keine Kommentare:
+    </a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-330636000'>
+<a href='https://www.blogger.com/post-edit.g?blogID=2832294983171429389&postID=8604176988193909511&from=pencil' title='Post bearbeiten'>
+<img alt='' class='icon-action' height='18' src='https://img1.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://dreimannfussball.blogspot.ch/search?updated-max=2016-04-18T06:34:00-07:00&amp;max-results=7' id='Blog1_blog-pager-older-link' title='Ältere Posts'>Ältere Posts</a>
+</span>
+<a class='home-link' href='http://dreimannfussball.blogspot.ch/'>Startseite</a>
+</div>
+<div class='clear'></div>
+<div class='blog-feeds'>
+<div class='feed-links'>
+Abonnieren
+<a class='feed-link' href='http://dreimannfussball.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>Posts (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'de'};</script>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-right-1'><div class='widget Text' data-version='1' id='Text1'>
+<h2 class='title'>Über Hexagon</h2>
+<div class='widget-content'>
+<div>Hexagon ist ein Echtzeit-Multiplayer-Actionspiel, in welchem bis zu 3 Spieler versuchen, einen Ball jeweils in die gegnerischen Tore zu befördern.</div><div><br /></div><div>Diese simplen Spielregeln sollen einen innovativen Spielablauf erzeugen:</div><br /><ul><li>Drei Spieler verteidigen auf einem regelmässig sechseckigen Spielfeld jeweils ein Tor an abwechselnden Seitenwänden. </li><br /><li>Gespielt wird mit einem Ball, der zu beginn des Spiels und nach jedem gefallenen Tor von der Mitte aus in eine zufällige Richtung losrollt.</li><br /><li>Gezählt werden nicht erzielte, sondern durchgelassene Tore. Das Spiel gewinnt, wer nach ablauf der Zeit die wenigsten Tore durchgelassen hat.</li><br /><li>In der Nähe ihres eigenen Tores verkleinern sich die Spieler.</li></ul><div><br /></div><div><span =""  style="font-size:100%;">Hexagon ist ein Java-Opensource Projekt, welches im Rahmen der Vorlesung "CS108: Programmier-Projekt" an der Uni Basel umgesetzt wird. Das Projekt ist in 5 Perioden eingeteilt, die jeweils mit einer Präsentation (Meilenstein) enden. Dieser Blog ist eine Art Projekttagebuch, in welchem der Arbeitsfortschritt bis zu den jeweiligen Meilensteinen zusammengefasst wird.</span></div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2832294983171429389&widgetType=Text&widgetId=Text1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Text1"));' target='configText1' title='Bearbeiten'>
+<img alt='' height='18' src='https://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Profile' data-version='1' id='Profile1'>
+<h2>Beitragende</h2>
+<div class='widget-content'>
+<ul>
+<li><a class='profile-name-link g-profile' href='https://www.blogger.com/profile/09779954536229629168' style='background-image: url(//www.blogger.com/img/logo-16.png);'>Mathias Schmid</a></li>
+<li><a class='profile-name-link g-profile' href='https://www.blogger.com/profile/09347378156021470836' style='background-image: url(//www.blogger.com/img/logo-16.png);'>Maximilian Reber</a></li>
+<li><a class='profile-name-link g-profile' href='https://plus.google.com/102063619952721490060' style='background-image: url(//www.google.com/images/icons/ui/gprofile_button-16.png);'>Andrea Tuccillo</a></li>
+<li><a class='profile-name-link g-profile' href='https://plus.google.com/105990536467293805346' style='background-image: url(//www.google.com/images/icons/ui/gprofile_button-16.png);'>Elias Arnold</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2832294983171429389&widgetType=Profile&widgetId=Profile1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target='configProfile1' title='Bearbeiten'>
+<img alt='' height='18' src='https://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<h2>Blog-Archiv</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://dreimannfussball.blogspot.ch/search?updated-min=2016-01-01T00:00:00-08:00&amp;updated-max=2017-01-01T00:00:00-08:00&amp;max-results=10'>
+2016
+</a>
+<span class='post-count' dir='ltr'>(10)</span>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://dreimannfussball.blogspot.ch/2016_05_01_archive.html'>
+Mai
+</a>
+<span class='post-count' dir='ltr'>(6)</span>
+<ul class='posts'>
+<li><a href='http://dreimannfussball.blogspot.ch/2016/05/qulitatsmerkmale-messung-3.html'>Qulitätsmerkmale: Messung 3</a></li>
+<li><a href='http://dreimannfussball.blogspot.ch/2016/05/bis-meilenstein-4.html'>Bis Meilenstein 4</a></li>
+<li><a href='http://dreimannfussball.blogspot.ch/2016/05/qualitatsmerkmale-messung-nr2.html'>Qualitätsmerkmale: Messung Nr.2</a></li>
+<li><a href='http://dreimannfussball.blogspot.ch/2016/05/screenshot.html'>Screenshot</a></li>
+<li><a href='http://dreimannfussball.blogspot.ch/2016/05/build-file.html'>Build File</a></li>
+<li><a href='http://dreimannfussball.blogspot.ch/2016/05/qualitatsmasse.html'>Qualitätsmerkmale: Messung Nr.1</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://dreimannfussball.blogspot.ch/2016_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://dreimannfussball.blogspot.ch/2016_03_01_archive.html'>
+März
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2832294983171429389&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Bearbeiten'>
+<img alt='' height='18' src='https://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot no-items section' id='footer-1'></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='foot no-items section' id='footer-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='foot no-items section' id='footer-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3' name='Footer'><div class='widget Attribution' data-version='1' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Simple-Vorlage. Powered by <a href='https://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2832294983171429389&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='Bearbeiten'>
+<img alt='' height='18' src='https://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/3107131574-widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '2832294983171429389';BLOG_attachCsiOnload(''); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d2832294983171429389','//dreimannfussball.blogspot.ch/','2832294983171429389');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '2832294983171429389', 'bloggerUrl': 'https://www.blogger.com', 'title': 'Programmier-Projekt - Hexagon', 'pageType': 'index', 'url': 'http://dreimannfussball.blogspot.ch/', 'canonicalUrl': 'http://dreimannfussball.blogspot.com/', 'homepageUrl': 'http://dreimannfussball.blogspot.ch/', 'canonicalHomepageUrl': 'http://dreimannfussball.blogspot.com/', 'blogspotFaviconUrl': 'http://dreimannfussball.blogspot.ch/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'analyticsAccountNumber': '', 'useUniversalAnalytics': false, 'pageName': '', 'pageTitle': 'Programmier-Projekt - Hexagon', 'encoding': 'UTF-8', 'locale': 'de', 'localeUnderscoreDelimited': 'de', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Programmier-Projekt - Hexagon - Atom\x22 href\x3d\x22http://dreimannfussball.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Programmier-Projekt - Hexagon - RSS\x22 href\x3d\x22http://dreimannfussball.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Programmier-Projekt - Hexagon - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/2832294983171429389/posts/default\x22 /\x3e\n', 'meTag': '', 'openIdOpTag': '\x3clink rel\x3d\x22openid.server\x22 href\x3d\x22https://www.blogger.com/openid-server.g\x22 /\x3e\n\x3clink rel\x3d\x22openid.delegate\x22 href\x3d\x22http://dreimannfussball.blogspot.com/\x22 /\x3e\n', 'latencyHeadScript': '\x3cscript type\x3d\x22text/javascript\x22\x3e(function() { (function(){function c(a){this.t\x3d{};this.tick\x3dfunction(a,c,b){var d\x3dvoid 0!\x3db?b:(new Date).getTime();this.t[a]\x3d[d,c];if(void 0\x3d\x3db)try{window.console.timeStamp(\x22CSI/\x22+a)}catch(e){}};this.tick(\x22start\x22,null,a)}var a;window.performance\x26\x26(a\x3dwindow.performance.timing);var h\x3da?new c(a.responseStart):new c;window.jstiming\x3d{Timer:c,load:h};if(a){var b\x3da.navigationStart,e\x3da.responseStart;0\x3cb\x26\x26e\x3e\x3db\x26\x26(window.jstiming.srt\x3de-b)}if(a){var d\x3dwindow.jstiming.load;0\x3cb\x26\x26e\x3e\x3db\x26\x26(d.tick(\x22_wtsrt\x22,void 0,b),d.tick(\x22wtsrt_\x22,\n\x22_wtsrt\x22,e),d.tick(\x22tbsd_\x22,\x22wtsrt_\x22))}try{a\x3dnull,window.chrome\x26\x26window.chrome.csi\x26\x26(a\x3dMath.floor(window.chrome.csi().pageT),d\x26\x260\x3cb\x26\x26(d.tick(\x22_tbnd\x22,void 0,window.chrome.csi().startE),d.tick(\x22tbnd_\x22,\x22_tbnd\x22,b))),null\x3d\x3da\x26\x26window.gtbExternal\x26\x26(a\x3dwindow.gtbExternal.pageT()),null\x3d\x3da\x26\x26window.external\x26\x26(a\x3dwindow.external.pageT,d\x26\x260\x3cb\x26\x26(d.tick(\x22_tbnd\x22,void 0,window.external.startE),d.tick(\x22tbnd_\x22,\x22_tbnd\x22,b))),a\x26\x26(window.jstiming.pt\x3da)}catch(k){}})();window.tickAboveFold\x3dfunction(c){var a\x3d0;if(c.offsetParent){do a+\x3dc.offsetTop;while(c\x3dc.offsetParent)}c\x3da;750\x3e\x3dc\x26\x26window.jstiming.load.tick(\x22aft\x22)};var f\x3d!1;function g(){f||(f\x3d!0,window.jstiming.load.tick(\x22firstScrollTime\x22))}window.addEventListener?window.addEventListener(\x22scroll\x22,g,!1):window.attachEvent(\x22onscroll\x22,g);\n })();\x3c/script\x3e', 'mobileHeadScript': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/1491713228-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/bc47f4f20a68c8f8', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n'}}, {'name': 'features', 'data': {'templateBrowserTheme': true, 'widgetVisibility': true}}, {'name': 'messages', 'data': {'adsGoHere': 'Hier wird Werbung angezeigt', 'archive': 'Archiv', 'authorSaid': '%1&#160;meint&#8230;', 'authorSaidWithLink': '\x3ca href\x3d\x22%2\x22 rel\x3d\x22nofollow\x22\x3e%1\x3c/a\x3e&#160;meint&#8230;', 'blogArchive': 'Blog-Archiv', 'by': 'Von', 'byAuthor': 'Von %1', 'byAuthorLink': 'Von \x3ca href\x3d\x22%2\x22\x3e%1\x3c/a\x3e', 'configurationRequired': 'Konfiguration erforderlich', 'deleteBacklink': 'Backlink löschen', 'deleteComment': 'Kommentar löschen', 'edit': 'Bearbeiten', 'emailAddress': 'E-Mail-Adresse', 'getEmailNotifications': 'E-Mail-Benachrichtigungen erhalten', 'hidden': 'Ausgeblendet', 'keepReading': 'Weiterlesen', 'labels': 'Labels', 'loadMorePosts': 'Weitere Posts laden', 'loading': 'Wird geladen...', 'myBlogList': 'Meine Blog-Liste', 'myFavoriteSites': 'Meine Lieblingswebsites', 'newer': 'Neuere', 'newerPosts': 'Neuere Posts', 'newest': 'Neueste', 'noResultsFound': 'Keine Ergebnisse gefunden', 'noTitle': 'Ohne Titel', 'numberOfComments': '{numComments,plural, \x3d0{Keine Kommentare}\x3d1{1 Kommentar}other{# Kommentare}}', 'older': 'Ältere', 'olderPosts': 'Ältere Posts', 'oldest': 'Älteste', 'onlyTeamMembersCanComment': 'Hinweis: Nur ein Mitglied dieses Blogs kann Kommentare posten.', 'popularPosts': 'Beliebte Posts', 'popularPostsFromThisBlog': 'Beliebte Posts aus diesem Blog', 'postAComment': 'Kommentar veröffentlichen', 'postedBy': 'Eingestellt von', 'postedByAuthor': 'Gepostet von %1', 'postedByAuthorLink': 'Gepostet von \x3ca href\x3d\x22%2\x22\x3e%1\x3c/a\x3e', 'readMore': 'Mehr anzeigen', 'recentPosts': 'Letzte Posts', 'reportAbuse': 'Missbrauch melden', 'search': 'Suchen', 'searchBlog': 'Im Blog suchen', 'share': 'Teilen', 'showAll': 'Alle anzeigen', 'showLess': 'Weniger anzeigen', 'showMore': 'Mehr anzeigen', 'someOfMyFavoriteSites': 'Einige meiner Lieblingswebsites', 'subscribe': 'Abonnieren', 'subscribeTo': 'Abonnieren', 'subscribeToThisBlog': 'Diesen Blog abonnieren', 'theresNothingHere': 'Keine Posts vorhanden', 'viewAll': 'Alle anzeigen', 'visible': 'Sichtbar', 'visitProfile': 'Profil aufrufen', 'widgetNotAvailableInPreview': 'Dieser Inhalt ist in der Blogvorschau nicht verfügbar.', 'widgetNotAvailableOnHttps': 'Dieser Inhalt ist noch nicht über verschlüsselte Verbindungen abrufbar.'}}, {'name': 'skin', 'data': {'vars': {'post_footer_background_color': '#f9f9f9', 'tabs_text_color': '#999999', 'date_header_letterspacing': 'inherit', 'content_shadow_spread': '40px', 'body_background_override': '', 'body_background': '#44ee00 none repeat scroll top left', 'description_text_size': '140%', 'mobile_background_size': 'auto', 'header_shadow_spread': '3px', 'image_border_color': '#eeeeee', 'date_header_color': '#222222', 'header_shadow_offset_top': '2px', 'header_border_horizontalsize': '0', 'widget_title_font': 'normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'tabs_border_color': '#eeeeee', 'tabs_bevel_border_width': '1px', 'body_background_gradient_tile': 'none', 'description_text_color': '#ffffff', 'main_section_margin': '15px', 'post_title_font': 'normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'page_width': 'auto', 'paging_background': 'transparent none no-repeat scroll top center', 'body_text_color': '#222222', 'content_padding': '10px', 'header_background_gradient': 'url(//www.blogblog.com/1kt/simple/gradients_light.png)', 'post_margin_bottom': '25px', 'header_shadow_offset_left': '1px', 'tabs_background_color': '#f5f5f5', 'content_background_color': '#ffffff', 'body_background_gradient_cap': 'none', 'main_padding_top': '30px', 'widget_alternate_text_color': '#999999', 'image_text_color': '#222222', 'link_visited_color': '#888888', 'tabs_margin_side': '30px', 'image_border_large_size': '5px', 'content_shadow_spread_webkit': '5px', 'mobile_button_color': '#ffffff', 'tabs_selected_text_color': '#000000', 'main_border_width': '0', 'content_background_color_selector': '.content-inner', 'link_color': '#77cc11', 'post_footer_border_color': '#eeeeee', 'date_header_font': 'normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'tabs_background_gradient': 'url(https://www.blogblog.com/1kt/simple/gradients_light.png)', 'content_padding_horizontal': '10px', 'header_font': 'normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'startSide': 'left', 'tabs_font': 'normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'widget_title_text_color': '#000000', 'header_border_size': '0', 'tabs_selected_background_color': '#eeeeee', 'date_header_margin': 'inherit', 'footer_bevel': '0', 'image_border_small_size': '2px', 'content_shadow_spread_ie': '10px', 'mobile_background_overlay': 'transparent none repeat scroll top left', 'endSide': 'right', 'date_header_padding': 'inherit', 'image_background_color': '#ffffff', 'body_rule_color': '#eeeeee', 'header_bottom_border_size': '0', 'page_width_selector': '.region-inner', 'body_background_color': '#44ee00', 'header_text_color': '#ffffff', 'main_padding': '15px', 'date_header_background_color': 'rgba(0, 0, 0, 0)', 'tabs_border_width': '1px', 'body_font': 'normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'link_hover_color': '#65ff00', 'header_background_color': '#77cc11', 'keycolor': '#77cc11', 'main_padding_bottom': '30px', 'post_footer_text_color': '#666666', 'tabs_margin_top': '0', 'header_padding': '30px'}, 'override': ''}}, {'name': 'template', 'data': {'name': 'Einfach', 'isResponsive': false, 'isCustom': false}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'title': 'Programmier-Projekt - Hexagon', 'description': ''}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1766148842-lbx__de.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_TextView', new _WidgetInfo('Text1', 'sidebar-right-1', null, document.getElementById('Text1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar-right-1', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Wird geladen...'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'Simple-Vorlage. Powered by \x3ca href\x3d\x27https://www.blogger.com\x27 target\x3d\x27_blank\x27\x3eBlogger\x3c/a\x3e.'}, 'displayModeFull'));
+</script>
+</body>
+</html>

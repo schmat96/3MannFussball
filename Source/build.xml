@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="Hexagon" default="make-jar" basedir=".">
+    <property name="src.dir" value="./src"/>
+    <property name="test.dir" value="./tests"/>
+    <property name="bin.dir"  location="./bin"/>
+    <property name="lib.dir"  location="./lib"/>
+    <property name="doc.dir"  location="./doc"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    
+    <path id="production.src.path">
+        <pathelement location="${src.dir}"/>
+    </path>
+
+    <path id="test.src.path">
+        <path refid="production.src.path"/>
+        <pathelement location="${test.dir}"/>
+    </path>
+    
+    <path id="production.class.path">
+        <pathelement location="${bin.dir}"/>
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar"/>
+            <exclude name="**/junit*.jar"/>
+            
+        </fileset>
+    </path>
+
+    <path id="test.class.path">
+        <path refid="production.class.path"/>
+        <pathelement location="${test.dir}"/>
+        <fileset dir="${lib.dir}">
+            <include name="**/junit*.jar"/>
+        </fileset>
+    </path>
+    
+    <path id="junit.class.path">
+        <fileset dir="lib/" includes="**/*.jar"/>
+        <path refid="test.class.path"/>
+    </path>
+    <!--                                                Delete bin folder                                   -->
+    <target name="clean">
+        <delete dir="${bin.dir}"/>
+    </target>
+
+    <!--                                                 Create bin folder                                   -->
+    <target name="init" depends="clean">
+        <mkdir dir="${bin.dir}"/>
+    </target>
+    
+    <!--                                                 Create Javadoc                                      -->
+    <target name="make-javadoc">
+        <delete dir="${doc.dir}"/>
+        <mkdir dir="${doc.dir}"/>
+        <javadoc sourcepath="${src.dir}"
+            destdir="${doc.dir}"
+            classpath="${src.dir}"
+            author="true"
+            version="true"
+            use="true"
+                 />
+    </target>
+    <!--                                                 Build Project                                        -->
+    <target name="build-project" depends="init, make-javadoc">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src refid="production.src.path"/>
+            <classpath refid="production.class.path"/>
+        </javac>
+    </target>
+    
+    <!--                                                 Build Project and Tests                                        -->
+    <target name="build-test" depends="init">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src refid="test.src.path"/>
+            <classpath refid="test.class.path"/>
+        </javac>
+    </target>
+    
+    <!--                                                 Make .jar                                        -->
+    <target name="make-jar" depends="build-project">
+        <jar destfile="Hexagon.jar" basedir="${bin.dir}">
+            <zipgroupfileset dir="${lib.dir}" includes="**/*.jar"/>
+            <manifest>
+                <attribute name="Main-Class" value="main.Hexagon"/>
+            </manifest>
+        </jar>
+    </target>
+    
+    <target name="junit" depends="build-test">
+        <junit printsummary="yes">
+            <classpath>
+                <path refid="junit.class.path"/>
+            </classpath>
+            <formatter type="plain" usefile="false" /> <!-- to screen -->
+            <test name="models.LobbyTest"/>
+        </junit>
+    </target>
+</project>

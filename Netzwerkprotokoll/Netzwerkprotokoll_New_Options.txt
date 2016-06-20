@@ -1,0 +1,13 @@
+Chat
+SERVER_MESSAGE("ServerMessage"),
+
+UpdateGame
+Server
+KEY_INPUTS("KeyInputs"),
+Client
+GET_OLD_GAMES("GetOldGames"),
+SCOREBOARD("ScoreBoard"),
+PLAYER_UPDATE_COORD("PlayerUpdateCoord"),
+
+
+
